@@ -1,0 +1,12 @@
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\bin\Release\TestDevice.exe.config
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\bin\Release\TestDevice.exe
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\bin\Release\TestDevice.pdb
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Release\TestDevice.Properties.Resources.resources
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Release\TestDevice.TestDeviceForm.resources
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Release\TestDevice.csproj.GenerateResource.Cache
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Release\TestDevice.exe
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Release\TestDevice.pdb
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\bin\TestDevice.exe.config
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\bin\TestDevice.exe
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\bin\TestDevice.pdb
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Release\TestDevice.csprojResolveAssemblyReference.cache

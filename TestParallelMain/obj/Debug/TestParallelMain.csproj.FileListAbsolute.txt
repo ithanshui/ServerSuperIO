@@ -1,0 +1,6 @@
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestParallelMain.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestParallelMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestParallelMain.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestParallelMain\obj\Debug\TestParallelMain.csprojResolveAssemblyReference.cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestParallelMain\obj\Debug\TestParallelMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestParallelMain\obj\Debug\TestParallelMain.pdb

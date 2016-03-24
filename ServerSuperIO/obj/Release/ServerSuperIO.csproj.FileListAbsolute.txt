@@ -1,0 +1,9 @@
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\bin\Release\ServerSuperIO.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\bin\Release\ServerSuperIO.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Release\ServerSuperIO.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Release\ServerSuperIO.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Release\ServerSuperIO.Device.MonitorChannelForm.resources
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Release\ServerSuperIO.csproj.GenerateResource.Cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\ServerSuperIO.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\ServerSuperIO.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Release\ServerSuperIO.csprojResolveAssemblyReference.cache

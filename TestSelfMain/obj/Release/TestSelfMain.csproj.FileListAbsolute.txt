@@ -1,0 +1,7 @@
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestSelfMain\bin\Release\TestSelfMain.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestSelfMain.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestSelfMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestSelfMain.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestSelfMain\obj\Release\TestSelfMain.csprojResolveAssemblyReference.cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestSelfMain\obj\Release\TestSelfMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestSelfMain\obj\Release\TestSelfMain.pdb

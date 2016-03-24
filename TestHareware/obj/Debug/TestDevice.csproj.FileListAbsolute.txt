@@ -1,0 +1,11 @@
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\bin\Debug\TestDevice.exe.config
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\bin\Debug\TestDevice.exe
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\bin\Debug\TestDevice.pdb
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Debug\TestDevice.Properties.Resources.resources
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Debug\TestDevice.TestDeviceForm.resources
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Debug\TestDevice.csproj.GenerateResource.Cache
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Debug\TestDevice.exe
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\TestDevice\obj\Debug\TestDevice.pdb
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\bin\TestDevice.exe.config
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\bin\TestDevice.exe
+E:\工作目录\工作区\平台软件\开发版\SuperIO_Demo\bin\TestDevice.pdb

@@ -1,0 +1,11 @@
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\bin\Debug\TestLog.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\bin\Debug\TestLog.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\bin\Debug\TestLog.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\bin\Debug\ServerSuperIO.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\bin\Debug\ServerSuperIO.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\obj\Debug\TestLog.csprojResolveAssemblyReference.cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\obj\Debug\TestLog.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\obj\Debug\TestLog.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLog.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLog.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLog.pdb

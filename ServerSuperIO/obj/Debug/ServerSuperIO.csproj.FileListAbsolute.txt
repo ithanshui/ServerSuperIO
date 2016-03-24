@@ -1,0 +1,8 @@
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\bin\Debug\ServerSuperIO.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\bin\Debug\ServerSuperIO.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Debug\ServerSuperIO.Device.MonitorChannelForm.resources
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Debug\ServerSuperIO.csproj.GenerateResource.Cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Debug\ServerSuperIO.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Debug\ServerSuperIO.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\ServerSuperIO.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\ServerSuperIO.pdb

@@ -1,0 +1,7 @@
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestShowForm.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestShowForm.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestShowForm\obj\Release\TestShowForm.csprojResolveAssemblyReference.cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestShowForm\obj\Release\TestShowForm.ShowForm.resources
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestShowForm\obj\Release\TestShowForm.csproj.GenerateResource.Cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestShowForm\obj\Release\TestShowForm.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestShowForm\obj\Release\TestShowForm.pdb

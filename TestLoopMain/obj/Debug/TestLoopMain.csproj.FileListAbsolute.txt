@@ -1,0 +1,13 @@
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\bin\Debug\TestLoopMain.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\bin\Debug\TestLoopMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\bin\Debug\TestLoopMain.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\bin\Debug\ServerSuperIO.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\bin\Debug\TestDeviceDriver.dll
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\bin\Debug\ServerSuperIO.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\bin\Debug\TestDeviceDriver.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\obj\Debug\TestLoopMain.csprojResolveAssemblyReference.cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\obj\Debug\TestLoopMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLoopMain\obj\Debug\TestLoopMain.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLoopMain.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLoopMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLoopMain.pdb
