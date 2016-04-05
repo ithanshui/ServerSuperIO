@@ -109,7 +109,8 @@ namespace ServerSuperIO.Communicate.NET
         /// <param name="data"></param>
         public void Receive(ISocketSession socketSession, byte[] data)
         {
-            if (this.Server.Config.ControlMode == ControlMode.Self
+            if (this.Server.Config.ControlMode == ControlMode.Loop
+                || this.Server.Config.ControlMode == ControlMode.Self
                 || this.Server.Config.ControlMode == ControlMode.Parallel)
             {
                 #region
@@ -126,7 +127,14 @@ namespace ServerSuperIO.Communicate.NET
 
                         try
                         {
-                            dev.Run(socketSession.Key, null, data);
+                            if (this.Server.Config.SocketMode == SocketMode.Tcp)
+                            {
+                                dev.Run(socketSession.Key, null, data);
+                            }
+                            else if (this.Server.Config.SocketMode == SocketMode.Udp)
+                            {
+                                dev.Run(socketSession.Key, socketSession.Channel, data);
+                            }
                         }
                         catch (Exception ex)
                         {

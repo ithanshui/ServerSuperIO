@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ServerSuperIO.Communicate;
+using ServerSuperIO.Communicate.NET;
 
 namespace ServerSuperIO.Config
 {
@@ -87,6 +88,11 @@ namespace ServerSuperIO.Config
         /// 控制模式
         /// </summary>
         ControlMode ControlMode { get; set; }
+
+        /// <summary>
+        /// socket模式
+        /// </summary>
+        SocketMode SocketMode { get; set; }
 
     }
 }

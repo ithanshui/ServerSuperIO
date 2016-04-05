@@ -76,6 +76,8 @@ namespace TestDeviceDriver
 
         public override void CommunicateError(ServerSuperIO.Communicate.IRequestInfo info)
         {
+            //UDP
+            //info.Channel.Write(System.Text.Encoding.ASCII.GetBytes("aaa"));
             OnDeviceRuningLog("通讯干扰");
         }
 

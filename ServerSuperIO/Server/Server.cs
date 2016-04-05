@@ -48,11 +48,20 @@ namespace ServerSuperIO.Server
                     EndPoint = new IPEndPoint(ipa, Config.ListenPort)
                 };
 
-                ISocketListener socketListener = new TcpSocketListener(info);
+                ISocketListener socketListener;
+                if (this.Config.SocketMode == SocketMode.Tcp)
+                {
+                    socketListener = new TcpSocketListener(info);
+                }
+                else
+                {
+                    socketListener = new UdpSocketListener(info);
+                }
+
                 socketListener.NewClientAccepted += tcpSocketListener_NewClientAccepted;
                 socketListener.Error += tcpSocketListener_Error;
                 socketListener.Stopped += tcpSocketListener_Stopped;
-                socketListener.Start();
+                socketListener.Start(this.Config);
 
                 _Listeners.Add(socketListener);
             }
@@ -130,7 +139,6 @@ namespace ServerSuperIO.Server
 
             _BufferManager = null;
 
-
             base.Stop();
         }
 
@@ -146,22 +154,31 @@ namespace ServerSuperIO.Server
 
         private void tcpSocketListener_NewClientAccepted(object sender, System.Net.Sockets.Socket client, object state)
         {
-            if (this.Config.ControlMode == ControlMode.Loop
-                || this.Config.ControlMode == ControlMode.Self
-                || this.Config.ControlMode == ControlMode.Parallel)
+            if (this.Config.SocketMode == SocketMode.Tcp)
             {
-                if (Config.IsCheckSameSocketSession)
+                if (this.Config.ControlMode == ControlMode.Loop
+                    || this.Config.ControlMode == ControlMode.Self
+                    || this.Config.ControlMode == ControlMode.Parallel)
                 {
-                    string[] ipInfo = client.RemoteEndPoint.ToString().Split(':');
-                    IChannel socketSession =ChannelManager.GetChannel(ipInfo[0],CommunicateType.NET);
-                    if (socketSession!=null)
+                    if (Config.IsCheckSameSocketSession)
                     {
-                        RemoveSocketSession((ISocketSession)socketSession);
+                        string[] ipInfo = client.RemoteEndPoint.ToString().Split(':');
+                        IChannel socketSession = ChannelManager.GetChannel(ipInfo[0], CommunicateType.NET);
+                        if (socketSession != null)
+                        {
+                            RemoveTcpSocketSession((ISocketSession) socketSession);
+                        }
                     }
                 }
-            }
 
-            AddSocketSession(client);
+                AddTcpSocketSession(client);
+            }
+            else if (this.Config.SocketMode == SocketMode.Udp)
+            {
+                object[] arr = (object[])state;
+                ISocketSession socketSession=new UdpSocketSession(client,(IPEndPoint)arr[1],null);
+                socketChannel_SocketReceiveData(socketSession, socketSession, (byte[])arr[0]);
+            }
         }
 
         private void socketChannel_SocketReceiveData(object source, ISocketSession socketSession, byte[] data)
@@ -169,7 +186,7 @@ namespace ServerSuperIO.Server
             ISocketController netController = (ISocketController)ControllerManager.GetController(SocketController.ConstantKey);
             if (netController != null)
             {
-                netController.Receive(socketSession,data);
+                netController.Receive(socketSession, data);
             }
             else
             {
@@ -179,10 +196,10 @@ namespace ServerSuperIO.Server
 
         private void socketChannel_CloseSocket(object source, ISocketSession socketSession)
         {
-            RemoveSocketSession(socketSession);
+            RemoveTcpSocketSession(socketSession);
         }
 
-        private void AddSocketSession(Socket client)
+        private void AddTcpSocketSession(Socket client)
         {
             if (client == null)
                 return;
@@ -197,7 +214,7 @@ namespace ServerSuperIO.Server
                     return;
                 }
 
-                ISocketSession socketSession = new SocketSession(client, socketProxy);
+                ISocketSession socketSession = new TcpSocketSession(client,(IPEndPoint)client.RemoteEndPoint, socketProxy);
                 socketSession.Setup(this);
                 socketSession.Initialize();
 
@@ -232,7 +249,7 @@ namespace ServerSuperIO.Server
             }
         }
 
-        private void RemoveSocketSession(ISocketSession socketSession)
+        private void RemoveTcpSocketSession(ISocketSession socketSession)
         {
             if (socketSession == null)
                 return;

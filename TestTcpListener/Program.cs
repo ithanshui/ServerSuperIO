@@ -20,6 +20,7 @@ namespace TestTcpListener
         {
             _server=new Server("myserver",new Config
             {
+                SocketMode = SocketMode.Udp,
                 ControlMode=ControlMode.Parallel,
                 IsCheckSameSocketSession = false,
             });

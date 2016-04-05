@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace ServerSuperIO.Communicate.NET
@@ -25,8 +27,13 @@ namespace ServerSuperIO.Communicate.NET
         Socket Client { get; }
 
         /// <summary>
-        /// 异步代理
+        /// 远程点
         /// </summary>
+        IPEndPoint RemoteEndPoint { get; }
+
+        ///// <summary>
+        ///// 异步代理
+        ///// </summary>
         ISocketAsyncEventArgsProxy SocketAsyncProxy { get; }
 
         /// <summary>

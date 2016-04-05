@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using ServerSuperIO.Config;
 
 namespace ServerSuperIO.Communicate.NET
 {
@@ -13,7 +14,7 @@ namespace ServerSuperIO.Communicate.NET
 
         ListenerInfo ListenerInfo { get; }
 
-        bool Start();
+        bool Start(IConfig config);
 
         void Stop();
 
