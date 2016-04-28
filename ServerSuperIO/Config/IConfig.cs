@@ -94,5 +94,9 @@ namespace ServerSuperIO.Config
         /// </summary>
         SocketMode SocketMode { get; set; }
 
+        /// <summary>
+        /// 分发模式
+        /// </summary>
+        DeliveryMode DeliveryMode { get; set; }
     }
 }

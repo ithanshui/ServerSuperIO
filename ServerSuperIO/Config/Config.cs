@@ -27,6 +27,7 @@ namespace ServerSuperIO.Config
             BackLog = 1000;
             IsCheckSameSocketSession = true;
             SocketMode=SocketMode.Tcp;
+            DeliveryMode=DeliveryMode.DeviceIP;
         }
 
         public int ComReadBufferSize { get; set; }
@@ -62,5 +63,7 @@ namespace ServerSuperIO.Config
         public bool IsCheckSameSocketSession { get; set; }
 
         public SocketMode SocketMode { get; set; }
+
+        public DeliveryMode DeliveryMode { get; set; }
     }
 }

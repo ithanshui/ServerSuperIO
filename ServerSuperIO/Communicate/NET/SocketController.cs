@@ -119,9 +119,26 @@ namespace ServerSuperIO.Communicate.NET
                 if (list == null || list.Length <= 0)
                     return;
 
+                int counter = 0;
+                bool isDelivery = false;
+
                 foreach (IRunDevice dev in list)
                 {
-                    if (String.CompareOrdinal(dev.DeviceParameter.NET.RemoteIP, socketSession.RemoteIP) == 0)
+                    if (this.Server.Config.DeliveryMode == DeliveryMode.DeviceIP)
+                    {
+                        isDelivery = String.CompareOrdinal(dev.DeviceParameter.NET.RemoteIP, socketSession.RemoteIP) == 0 ? true : false;
+                    }
+                    else if (this.Server.Config.DeliveryMode == DeliveryMode.DeviceAddress)
+                    {
+                        try
+                        {
+                            isDelivery = dev.DeviceParameter.DeviceAddr == dev.Protocol.GetAddress(data) ? true : false;
+                        }
+                        catch
+                        { }
+                    }
+
+                    if (isDelivery)
                     {
                         dev.ShowMonitorData(data, "接收");
 
@@ -141,7 +158,7 @@ namespace ServerSuperIO.Communicate.NET
                             Server.Logger.Error(true, "", ex);
                         }
 
-                        int counter = this.Server.DeviceManager.GetCounter(dev.DeviceParameter.DeviceID);
+                        counter = this.Server.DeviceManager.GetCounter(dev.DeviceParameter.DeviceID);
 
                         Interlocked.Decrement(ref counter);
 
@@ -151,6 +168,8 @@ namespace ServerSuperIO.Communicate.NET
                         }
 
                         this.Server.DeviceManager.SetCounter(dev.DeviceParameter.DeviceID, counter);
+
+                        break;
                     }
                 }
                 #endregion

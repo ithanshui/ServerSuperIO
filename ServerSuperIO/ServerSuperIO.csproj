@@ -80,6 +80,7 @@
     <Compile Include="Communicate\IOState.cs" />
     <Compile Include="Communicate\IRequestInfo.cs" />
     <Compile Include="Communicate\NET\BufferManager.cs" />
+    <Compile Include="Communicate\NET\DeliveryMode.cs" />
     <Compile Include="Communicate\NET\Handler.cs" />
     <Compile Include="Communicate\NET\ISocketAsyncEventArgsProxy.cs" />
     <Compile Include="Communicate\NET\ISocketConnector.cs" />
