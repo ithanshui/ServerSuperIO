@@ -14,16 +14,17 @@ namespace TestDeviceDriver
     {
         private DeviceDyn _deviceDyn;
         private DevicePara _devicePara;
+        private DeviceProtocol _protocol;
         public DeviceSingletonDriver()
             : base()
         {
             _devicePara = new DevicePara();
             _deviceDyn = new DeviceDyn();
+            _protocol=new DeviceProtocol();
         }
 
         public override void Initialize(int devid)
         {
-            this.Protocol=new DeviceProtocol();
             this.Protocol.InitDriver(this);
 
             //初始化设备参数信息
@@ -158,6 +159,8 @@ namespace TestDeviceDriver
         {
             get { return _devicePara; }
         }
+
+        public override IProtocolDriver Protocol { get; }
 
         public override DeviceType DeviceType
         {

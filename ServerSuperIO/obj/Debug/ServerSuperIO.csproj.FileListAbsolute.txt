@@ -6,3 +6,4 @@ E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Debug\Ser
 E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Debug\ServerSuperIO.pdb
 E:\工作目录\工作区\平台软件\ServerSuperIO\bin\ServerSuperIO.dll
 E:\工作目录\工作区\平台软件\ServerSuperIO\bin\ServerSuperIO.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Debug\ServerSuperIO.csprojResolveAssemblyReference.cache

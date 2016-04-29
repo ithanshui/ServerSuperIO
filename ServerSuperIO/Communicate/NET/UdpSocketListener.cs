@@ -8,7 +8,7 @@ using ServerSuperIO.Config;
 
 namespace ServerSuperIO.Communicate.NET
 {
-    internal class UdpSocketListener : SocketListenerBase
+    public class UdpSocketListener : SocketListenerBase
     {
         private Socket _ListenSocket;
 

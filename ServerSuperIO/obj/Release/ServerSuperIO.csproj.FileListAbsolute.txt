@@ -6,4 +6,3 @@ E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Release\S
 E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Release\ServerSuperIO.csproj.GenerateResource.Cache
 E:\工作目录\工作区\平台软件\ServerSuperIO\bin\ServerSuperIO.dll
 E:\工作目录\工作区\平台软件\ServerSuperIO\bin\ServerSuperIO.pdb
-E:\工作目录\工作区\平台软件\ServerSuperIO\ServerSuperIO\obj\Release\ServerSuperIO.csprojResolveAssemblyReference.cache

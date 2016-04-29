@@ -503,7 +503,7 @@ namespace ServerSuperIO.Device
         /// <summary>
         /// 协议驱动接口
         /// </summary>
-        public IProtocolDriver Protocol { get; protected set; }
+        public abstract IProtocolDriver Protocol { get; }
 
         /// <summary>
         /// 设备类型

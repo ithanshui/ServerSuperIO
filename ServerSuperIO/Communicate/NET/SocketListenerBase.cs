@@ -8,7 +8,7 @@ using ServerSuperIO.Config;
 
 namespace ServerSuperIO.Communicate.NET
 {
-    internal abstract class SocketListenerBase:ISocketListener
+    public abstract class SocketListenerBase : ISocketListener
     {
         public IPEndPoint EndPoint
         {

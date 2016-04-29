@@ -6,4 +6,3 @@ E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Debug\Test
 E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Debug\TestHareware.csproj.GenerateResource.Cache
 E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Debug\TestHareware.exe
 E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Debug\TestHareware.pdb
-E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Debug\TestHareware.csprojResolveAssemblyReference.cache

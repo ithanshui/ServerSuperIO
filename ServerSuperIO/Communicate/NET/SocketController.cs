@@ -121,21 +121,25 @@ namespace ServerSuperIO.Communicate.NET
 
                 int counter = 0;
                 bool isDelivery = false;
-
                 foreach (IRunDevice dev in list)
                 {
+                    
                     if (this.Server.Config.DeliveryMode == DeliveryMode.DeviceIP)
                     {
                         isDelivery = String.CompareOrdinal(dev.DeviceParameter.NET.RemoteIP, socketSession.RemoteIP) == 0 ? true : false;
                     }
                     else if (this.Server.Config.DeliveryMode == DeliveryMode.DeviceAddress)
                     {
-                        try
+                        if (dev.Protocol != null
+                                && dev.Protocol.CheckData(data)
+                                && dev.Protocol.GetAddress(data) == dev.DeviceParameter.DeviceAddr)
                         {
-                            isDelivery = dev.DeviceParameter.DeviceAddr == dev.Protocol.GetAddress(data) ? true : false;
+                            isDelivery = true;
                         }
-                        catch
-                        { }
+                        else
+                        {
+                            isDelivery = false;
+                        }
                     }
 
                     if (isDelivery)

@@ -8,7 +8,7 @@ using ServerSuperIO.Config;
 
 namespace ServerSuperIO.Communicate.NET
 {
-    internal class TcpSocketListener:SocketListenerBase
+    public class TcpSocketListener : SocketListenerBase
     {
         private int _ListenBackLog;//侦听队列数
 
