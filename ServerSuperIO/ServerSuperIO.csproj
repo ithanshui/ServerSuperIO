@@ -22,6 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,6 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -78,6 +80,7 @@
     <Compile Include="Communicate\IOState.cs" />
     <Compile Include="Communicate\IRequestInfo.cs" />
     <Compile Include="Communicate\NET\BufferManager.cs" />
+    <Compile Include="Communicate\NET\DeliveryMode.cs" />
     <Compile Include="Communicate\NET\Handler.cs" />
     <Compile Include="Communicate\NET\ISocketAsyncEventArgsProxy.cs" />
     <Compile Include="Communicate\NET\ISocketConnector.cs" />
@@ -90,9 +93,15 @@
     <Compile Include="Communicate\NET\SocketConnector.cs" />
     <Compile Include="Communicate\NET\SocketController.cs" />
     <Compile Include="Communicate\NET\SocketListenerBase.cs" />
+    <Compile Include="Communicate\NET\SocketMode.cs" />
     <Compile Include="Communicate\NET\SocketParameter.cs" />
     <Compile Include="Communicate\NET\SocketSession.cs" />
+    <Compile Include="Communicate\NET\TcpSocketSession.cs" />
     <Compile Include="Communicate\NET\TcpSocketListener.cs" />
+    <Compile Include="Communicate\NET\UdpSocketListener.cs" />
+    <Compile Include="Communicate\NET\UdpSocketSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Communicate\RequestInfo.cs" />
     <Compile Include="Config\Config.cs" />
     <Compile Include="Config\IConfig.cs" />

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using ServerSuperIO.Config;
 
 namespace ServerSuperIO.Communicate.NET
 {
-    internal abstract class SocketListenerBase:ISocketListener
+    public abstract class SocketListenerBase : ISocketListener
     {
         public IPEndPoint EndPoint
         {
@@ -26,7 +27,7 @@ namespace ServerSuperIO.Communicate.NET
         /// </summary>
         /// <param name="config">The server config.</param>
         /// <returns></returns>
-        public abstract bool Start();
+        public abstract bool Start(IConfig config);
 
         public abstract void Stop();
 

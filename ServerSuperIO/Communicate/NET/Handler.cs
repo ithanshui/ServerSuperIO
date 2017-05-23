@@ -11,7 +11,7 @@ namespace ServerSuperIO.Communicate.NET
     /// </summary>
     /// <param name="source"></param>
     /// <param name="e"></param>
-    internal delegate void ErrorHandler(object source, Exception e);
+    public delegate void ErrorHandler(object source, Exception e);
 
     /// <summary>
     /// 接收客户端事件
@@ -19,7 +19,7 @@ namespace ServerSuperIO.Communicate.NET
     /// <param name="source"></param>
     /// <param name="client"></param>
     /// <param name="state"></param>
-    internal delegate void NewClientAcceptHandler(object source, Socket client, object state);
+    public delegate void NewClientAcceptHandler(object source, Socket client, object state);
 
     /// <summary>
     /// 关闭Socket事件

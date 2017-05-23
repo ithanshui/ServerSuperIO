@@ -109,7 +109,8 @@ namespace ServerSuperIO.Communicate.NET
         /// <param name="data"></param>
         public void Receive(ISocketSession socketSession, byte[] data)
         {
-            if (this.Server.Config.ControlMode == ControlMode.Self
+            if (this.Server.Config.ControlMode == ControlMode.Loop
+                || this.Server.Config.ControlMode == ControlMode.Self
                 || this.Server.Config.ControlMode == ControlMode.Parallel)
             {
                 #region
@@ -118,22 +119,50 @@ namespace ServerSuperIO.Communicate.NET
                 if (list == null || list.Length <= 0)
                     return;
 
+                int counter = 0;
+                bool isDelivery = false;
                 foreach (IRunDevice dev in list)
                 {
-                    if (String.CompareOrdinal(dev.DeviceParameter.NET.RemoteIP, socketSession.RemoteIP) == 0)
+                    
+                    if (this.Server.Config.DeliveryMode == DeliveryMode.DeviceIP)
+                    {
+                        isDelivery = String.CompareOrdinal(dev.DeviceParameter.NET.RemoteIP, socketSession.RemoteIP) == 0 ? true : false;
+                    }
+                    else if (this.Server.Config.DeliveryMode == DeliveryMode.DeviceAddress)
+                    {
+                        if (dev.Protocol != null
+                                && dev.Protocol.CheckData(data)
+                                && dev.Protocol.GetAddress(data) == dev.DeviceParameter.DeviceAddr)
+                        {
+                            isDelivery = true;
+                        }
+                        else
+                        {
+                            isDelivery = false;
+                        }
+                    }
+
+                    if (isDelivery)
                     {
                         dev.ShowMonitorData(data, "接收");
 
                         try
                         {
-                            dev.Run(socketSession.Key, null, data);
+                            if (this.Server.Config.SocketMode == SocketMode.Tcp)
+                            {
+                                dev.Run(socketSession.Key, null, data);
+                            }
+                            else if (this.Server.Config.SocketMode == SocketMode.Udp)
+                            {
+                                dev.Run(socketSession.Key, socketSession.Channel, data);
+                            }
                         }
                         catch (Exception ex)
                         {
                             Server.Logger.Error(true, "", ex);
                         }
 
-                        int counter = this.Server.DeviceManager.GetCounter(dev.DeviceParameter.DeviceID);
+                        counter = this.Server.DeviceManager.GetCounter(dev.DeviceParameter.DeviceID);
 
                         Interlocked.Decrement(ref counter);
 
@@ -143,6 +172,8 @@ namespace ServerSuperIO.Communicate.NET
                         }
 
                         this.Server.DeviceManager.SetCounter(dev.DeviceParameter.DeviceID, counter);
+
+                        break;
                     }
                 }
                 #endregion

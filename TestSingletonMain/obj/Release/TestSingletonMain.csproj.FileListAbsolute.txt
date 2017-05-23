@@ -1,1 +1,6 @@
 E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestSingletonMain.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestSingletonMain\obj\Release\TestSingletonMain.csprojResolveAssemblyReference.cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestSingletonMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestSingletonMain.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestSingletonMain\obj\Release\TestSingletonMain.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestSingletonMain\obj\Release\TestSingletonMain.pdb

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using ServerSuperIO.Common;
+using ServerSuperIO.Config;
 
 namespace ServerSuperIO.Communicate.NET
 {
-    internal class TcpSocketListener:SocketListenerBase
+    public class TcpSocketListener : SocketListenerBase
     {
         private int _ListenBackLog;//侦听队列数
 
@@ -20,7 +21,7 @@ namespace ServerSuperIO.Communicate.NET
             _ListenBackLog = info.BackLog;
         }
 
-        public override bool Start()
+        public override bool Start(IConfig config)
         {
             _ListenSocket = new Socket(this.ListenerInfo.EndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 

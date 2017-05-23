@@ -1,1 +1,9 @@
 E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestHareware.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestHareware.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestHareware.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Release\TestHareware.csprojResolveAssemblyReference.cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Release\TestHareware.Properties.Resources.resources
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Release\TestDevice.TestHarewareForm.resources
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Release\TestHareware.csproj.GenerateResource.Cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Release\TestHareware.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestHareware\obj\Release\TestHareware.pdb

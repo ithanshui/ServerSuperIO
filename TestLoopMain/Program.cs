@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ServerSuperIO.Communicate;
+using ServerSuperIO.Communicate.NET;
 using ServerSuperIO.Config;
 using ServerSuperIO.Device;
 using ServerSuperIO.Server;
@@ -61,6 +62,7 @@ namespace TestLoopMain
 
             Server server=new Server("服务1",new Config()
             {
+                SocketMode = SocketMode.Udp,
                 ControlMode = ControlMode.Loop
             });
 
@@ -79,7 +81,7 @@ namespace TestLoopMain
 
             //dev3.DeviceParameter.NET.WorkMode=WorkMode.TcpClient;
 
-            dev1.ShowMonitorDialog();
+            //dev1.ShowMonitorDialog();
 
             ////个性串口号
             //int oldport = dev1.DeviceParameter.COM.Port;

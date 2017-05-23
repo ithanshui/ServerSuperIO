@@ -1,1 +1,7 @@
 E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\bin\Release\TestLog.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLog.exe.config
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLog.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\bin\TestLog.pdb
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\obj\Release\TestLog.csprojResolveAssemblyReference.cache
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\obj\Release\TestLog.exe
+E:\工作目录\工作区\平台软件\ServerSuperIO\TestLog\obj\Release\TestLog.pdb

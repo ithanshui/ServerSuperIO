@@ -107,7 +107,7 @@ namespace ServerSuperIO.Device
         /// </summary>
         /// <param name="io"></param>
         /// <param name="senddata"></param>
-        public void Send(IChannel io, byte[] senddata)
+        public virtual void Send(IChannel io, byte[] senddata)
         {
             io.Write(senddata);
         }
@@ -117,7 +117,7 @@ namespace ServerSuperIO.Device
         /// </summary>
         /// <param name="io"></param>
         /// <returns></returns>
-        public byte[] Receive(IChannel io)
+        public virtual byte[] Receive(IChannel io)
         {
             return io.Read();
         }
@@ -503,7 +503,7 @@ namespace ServerSuperIO.Device
         /// <summary>
         /// 协议驱动接口
         /// </summary>
-        public IProtocolDriver Protocol { get; protected set; }
+        public abstract IProtocolDriver Protocol { get; }
 
         /// <summary>
         /// 设备类型

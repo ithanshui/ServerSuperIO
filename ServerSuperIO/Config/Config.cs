@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ServerSuperIO.Communicate;
+using ServerSuperIO.Communicate.NET;
 
 namespace ServerSuperIO.Config
 {
@@ -25,6 +26,8 @@ namespace ServerSuperIO.Config
             ListenPort = 6699;
             BackLog = 1000;
             IsCheckSameSocketSession = true;
+            SocketMode=SocketMode.Tcp;
+            DeliveryMode=DeliveryMode.DeviceIP;
         }
 
         public int ComReadBufferSize { get; set; }
@@ -58,5 +61,9 @@ namespace ServerSuperIO.Config
         public int BackLog { get; set; }
 
         public bool IsCheckSameSocketSession { get; set; }
+
+        public SocketMode SocketMode { get; set; }
+
+        public DeliveryMode DeliveryMode { get; set; }
     }
 }

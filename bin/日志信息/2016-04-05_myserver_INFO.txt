@@ -1,0 +1,42 @@
+[16-04-05 14:41:30]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 14:41:30]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 14:41:30]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 14:51:05]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 14:51:05]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 14:51:05]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 14:51:39]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 14:51:39]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 14:51:39]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:37:11]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:37:11]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:37:11]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:37:52]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:37:52]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:37:52]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:38:56]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:38:56]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:38:56]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:40:40]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:40:40]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
+[16-04-05 16:40:40]>>提供的 AddressFamily InterNetwork 的终结点对于此套接字无效，请改用 InterNetworkV6。
+参数名: RemoteEndPoint
